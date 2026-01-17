@@ -1,0 +1,254 @@
+/* Footer.css */
+.footer {
+  background-color: #222629;
+  padding: 4rem 2rem 2rem;
+  margin-top: 4rem;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main Footer Content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Footer Columns */
+.footer-column {
+  flex: 1;
+}
+
+/* About Column */
+.about-column {
+  padding-right: 1rem;
+}
+
+.logo-section {
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.footer-subtitle {
+  font-size: 1.1rem;
+  color: #4cc9f0; /* Light blue for contrast on dark background */
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-subtitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 2px;
+  background-color: #4cc9f0;
+}
+
+.about-text {
+  color: #b0b3b8; /* Light gray for readability on dark background */
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2d3438; /* Slightly lighter than background */
+  border: 1px solid #3a4044; /* Subtle border */
+  transition: all 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #4cc9f0;
+  transform: translateY(-2px);
+  border-color: #4cc9f0;
+}
+
+/* Divider */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #3a4044; /* Darker gray for dividers */
+  display: block;
+}
+
+/* Quick Links Column */
+.quick-links-column {
+  padding: 0 1rem;
+}
+
+.column-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #b0b3b8; /* Light gray for links */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #4cc9f0; /* Light blue on hover */
+  transform: translateX(5px);
+}
+
+/* Services Column */
+.services-column {
+  padding-left: 1rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid #3a4044;
+}
+
+.footer-divider-long {
+  height: 1px;
+  background-color: #3a4044;
+  margin-bottom: 2rem;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.copyright {
+  color: #b0b3b8; /* Light gray for copyright text */
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.policy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.policy-link {
+  color: #b0b3b8; /* Light gray for policy links */
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.policy-link:hover {
+  color: #4cc9f0; /* Light blue on hover */
+}
+
+.policy-link:not(:last-child)::after {
+  content: '/';
+  position: absolute;
+  right: -0.9rem;
+  color: #5d6468; /* Slightly darker separator color */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .footer {
+    padding: 5rem 3rem 2rem;
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .footer-divider {
+    width: 1px;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .bottom-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .policy-links {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 5rem 4rem 2rem;
+  }
+  
+  .footer-content {
+    gap: 4rem;
+  }
+}
+
+/* Animation for links */
+.footer-link {
+  position: relative;
+  padding-left: 0;
+  transition: all 0.3s ease;
+}
+
+.footer-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #4cc9f0;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover::before {
+  opacity: 1;
+}
+
+.footer-link:hover {
+  padding-left: 15px;
+}
