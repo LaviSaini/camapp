@@ -232,6 +232,10 @@
   z-index: 10;
 }
 
+.aboutCenterCircle img{
+  width: 55%;
+}
+
 .centerIcon {
   width: 35px;
   height: 35px;

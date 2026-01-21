@@ -1,0 +1,47 @@
+.page-hero {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* DARK OVERLAY */
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 32, 0.75);
+  z-index: 1;
+}
+
+/* CONTENT */
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.page-hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.breadcrumb span {
+  color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-hero-content h1 {
+    font-size: 34px;
+  }
+}

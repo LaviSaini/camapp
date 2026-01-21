@@ -29,8 +29,7 @@ const AboutSecurity = () => {
                     </div>
 
                     <div className="aboutCenterCircle">
-                        <div className="centerIcon">
-                        </div>
+                        <img src={circle} alt="Circle" />
                     </div>
                 </div>
 

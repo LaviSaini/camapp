@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
 import logoIcon from "../assets/images/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,29 +30,64 @@ const Header = () => {
     <header className={`header ${isSticky ? "sticky" : ""}`}>
       <div className="header-container">
 
-        {/* Logo */}
         <div className="logo">
           <img src={logoIcon} alt="UltraCam Logo" className="logo-img" />
         </div>
 
-
-        {/* Desktop Navigation */}
         <nav className="desktop-nav">
           <ul className="nav-links">
-            <li><a href="/" className="nav-link active">Home</a></li>
-            <li><a href="/about" className="nav-link">About Us</a></li>
-            <li><a href="/services" className="nav-link">Services</a></li>
-            <li><a href="/contact" className="nav-link">Contact Us</a></li>
+            <li>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                About Us
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Services
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Contact Us
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
-        {/* Get A Quote Button with arrow */}
         <button className="quote-btn" onClick={handleGetQuoteClick}>
           Get A Quote
           <span className="quote-arrow">→</span>
         </button>
 
-        {/* Mobile Menu Button (Hamburger) */}
         <button
           className="mobile-menu-btn"
           onClick={toggleMobileMenu}
@@ -62,17 +98,60 @@ const Header = () => {
           <span className={`hamburger-line ${isMobileMenuOpen ? 'active' : ''}`}></span>
         </button>
 
-        {/* Mobile Navigation Menu */}
         <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <nav className="mobile-nav-content">
             <div className="mobile-logo">
-              <h1>UltraCam<span className="logo-dot">.</span></h1>
+              <img src={logoIcon} alt="UltraCam Logo" className="logo-img" />
             </div>
             <ul className="mobile-nav-links">
-              <li><a href="/" className="mobile-nav-link active" onClick={() => setIsMobileMenuOpen(false)}>Home</a></li>
-              <li><a href="/about" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>About Us</a></li>
-              <li><a href="/services" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Services</a></li>
-              <li><a href="/contact" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a></li>
+              <li>
+                <NavLink
+                  to="/"
+                  end
+                  className={({ isActive }) =>
+                    isActive ? "mobile-nav-link active" : "mobile-nav-link"
+                  }
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? "mobile-nav-link active" : "mobile-nav-link"
+                  }
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About Us
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    isActive ? "mobile-nav-link active" : "mobile-nav-link"
+                  }
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Services
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive ? "mobile-nav-link active" : "mobile-nav-link"
+                  }
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact Us
+                </NavLink>
+              </li>
               <li>
                 <button
                   className="mobile-quote-btn"
