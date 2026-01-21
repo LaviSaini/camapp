@@ -1,9 +1,20 @@
 // Header.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
+import logoIcon from "../assets/images/logo.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsSticky(window.scrollY > 60);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,13 +26,14 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className={`header ${isSticky ? "sticky" : ""}`}>
       <div className="header-container">
-        
+
         {/* Logo */}
         <div className="logo">
-          <h1>UltraCam<span className="logo-dot">.</span></h1>
+          <img src={logoIcon} alt="UltraCam Logo" className="logo-img" />
         </div>
+
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav">
@@ -40,8 +52,8 @@ const Header = () => {
         </button>
 
         {/* Mobile Menu Button (Hamburger) */}
-        <button 
-          className="mobile-menu-btn" 
+        <button
+          className="mobile-menu-btn"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
@@ -62,8 +74,8 @@ const Header = () => {
               <li><a href="/services" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Services</a></li>
               <li><a href="/contact" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a></li>
               <li>
-                <button 
-                  className="mobile-quote-btn" 
+                <button
+                  className="mobile-quote-btn"
                   onClick={() => {
                     setIsMobileMenuOpen(false);
                     handleGetQuoteClick();
@@ -79,8 +91,8 @@ const Header = () => {
 
         {/* Overlay for mobile menu */}
         {isMobileMenuOpen && (
-          <div 
-            className="mobile-overlay" 
+          <div
+            className="mobile-overlay"
             onClick={() => setIsMobileMenuOpen(false)}
           ></div>
         )}

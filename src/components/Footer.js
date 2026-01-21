@@ -1,75 +1,73 @@
-// Footer.jsx
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
+import FooterLogo from "../assets/images/footer-logo.svg.png";
+import Symbol1 from "../assets/images/Symbol1.png";
+import Symbol2 from "../assets/images/Symbol2.png";
+import Symbol3 from "../assets/images/Symbol3.png";
+import Symbol4 from "../assets/images/Symbol4.png";
+
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        
-        {/* Main Footer Content */}
+
+        {/* TOP CONTENT */}
         <div className="footer-content">
-          
-          {/* Left Column - About */}
+
+          {/* LEFT */}
           <div className="footer-column about-column">
-            <div className="logo-section">
-              <h2 className="footer-logo">UltraCam</h2>
-              <p className="footer-subtitle">About Solutions</p>
+            <div className="footer-logo">
+              <img src={FooterLogo} alt="UltraCam" />
             </div>
+
+            <h4 className="footer-subtitle">About Solutions</h4>
             <p className="about-text">
-              We provide advanced Security and CCTV solutions, ensuring 24/7 protection with high-quality systems.
+              We provide advanced Security and CCTV solutions, ensuring 24/7
+              protection with high-quality systems.
             </p>
-            
-            {/* Social Icons */}
+
             <div className="social-icons">
-              <div className="icon-circle"></div>
-              <div className="icon-circle"></div>
-              <div className="icon-circle"></div>
+              <div className="icon-circle"><img src={Symbol1} alt="Pinterest" /></div>
+              <div className="icon-circle"><img src={Symbol2} alt="Twitter" /></div>
+              <div className="icon-circle"><img src={Symbol3} alt="Facebook" /></div>
+              <div className="icon-circle"><img src={Symbol4} alt="Instagram" /></div>
             </div>
           </div>
 
-          {/* Divider Line */}
-          <div className="footer-divider"></div>
-
-          {/* Middle Column - Quick Links */}
-          <div className="footer-column quick-links-column">
+          {/* QUICK LINKS */}
+          <div className="footer-column">
             <h3 className="column-title">Quick link</h3>
             <ul className="footer-links">
-              <li><a href="/" className="footer-link">Home</a></li>
-              <li><a href="/about" className="footer-link">About Us</a></li>
-              <li><a href="/services" className="footer-link">Services</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
             </ul>
           </div>
 
-          {/* Divider Line */}
-          <div className="footer-divider"></div>
-
-          {/* Right Column - Services */}
-          <div className="footer-column services-column">
+          {/* SERVICES */}
+          <div className="footer-column">
             <h3 className="column-title">Services</h3>
             <ul className="footer-links">
-              <li><a href="#" className="footer-link">24/7 Monitoring Services</a></li>
-              <li><a href="#" className="footer-link">Alarm Systems Installation</a></li>
-              <li><a href="#" className="footer-link">CCTV Installation</a></li>
-              <li><a href="#" className="footer-link">Smart Home Integration</a></li>
+              <li>24/7 Monitoring Services</li>
+              <li>Alarm Systems Installation</li>
+              <li>CCTV Installation</li>
+              <li>Smart Home Integration</li>
             </ul>
           </div>
+
         </div>
 
-        {/* Bottom Section - Copyright and Links */}
+        {/* BOTTOM */}
         <div className="footer-bottom">
-          <div className="footer-divider-long"></div>
-          
-          <div className="bottom-content">
-            <p className="copyright">
-              Copyright © 2026 All Rights Reserved.
-            </p>
-            
-            <div className="policy-links">
-              <a href="#" className="policy-link">Help</a>
-              <a href="#" className="policy-link">Privacy Policy</a>
-              <a href="#" className="policy-link">Terms & Condition</a>
-            </div>
+          <p>Copyright © 2026 All Rights Reserved.</p>
+
+          <div className="policy-links">
+            <a href="#">Help</a>
+            <span>/</span>
+            <a href="#">Privacy Policy</a>
+            <span>/</span>
+            <a href="#">Terms & Condition</a>
           </div>
         </div>
 

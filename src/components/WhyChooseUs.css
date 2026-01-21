@@ -1,0 +1,123 @@
+.why-choose {
+    background: #fff;
+    padding: 60px 0 100px;
+  }
+  
+  .why-container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 40px;
+  }
+  
+  /* HEADER */
+  .why-header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .why-badge {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #222629;
+    display: inline-block;
+  }
+
+  .why-badge img {
+    margin-right: 6px;
+  }
+  
+  .why-title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .why-title span {
+    color: #e01c08;
+  }
+  
+  .title-underline {
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg,
+      #E01C08 0%,
+      #B11101 50%,
+      #E01C08 100%);;
+    margin: 18px auto 0;
+  }
+  
+  /* CONTENT */
+  .why-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  /* COLUMNS */
+  .why-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* CARD */
+  .why-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 26px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  }
+  
+  .why-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(90deg,
+      #E01C08 0%,
+      #B11101 50%,
+      #E01C08 100%);;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+  }
+  
+  .why-icon img {
+    width: 26px;
+  }
+  
+  .why-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .why-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* CENTER IMAGE */
+  .why-center img {
+    max-width: 380px;
+    height: auto;
+    display: block;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .why-content {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+  
+    .why-center {
+      order: -1;
+      text-align: center;
+    }
+  }
+  
