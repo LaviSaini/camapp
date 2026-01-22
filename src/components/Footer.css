@@ -23,7 +23,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(90deg,#E01C08,#B11101,#E01C08);
+  background: linear-gradient(90deg, #E01C08, #B11101, #E01C08);
   padding: 10px 22px;
   border-radius: 30px;
   margin-bottom: 20px;
@@ -131,6 +131,7 @@
 
 .abovefooter-container {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   /* min-height: 560px; */
@@ -236,18 +237,18 @@
 
 /* RIGHT IMAGE */
 .abovefooter-right {
-  position: relative;
-  flex-shrink: 0;
+  position: absolute;
+  right: 30px;          
+  top: -88px;           
+  pointer-events: none;
 }
 
 .abovefooter-right img {
-  max-width: 520px;
+  width: 520px;
   height: auto;
   display: block;
-  position: relative;
-  top: -120px; /* Extends image upward beyond the red container */
-  margin-bottom: -161px; /* Prevents the overflow from affecting layout */
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
@@ -259,7 +260,7 @@
   .contact-info {
     justify-content: center;
   }
-  
+
   .abovefooter-right img {
     top: 0;
     margin-bottom: 0;

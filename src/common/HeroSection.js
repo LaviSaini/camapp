@@ -7,6 +7,8 @@ import cameraIcon from '../assets/images/MaskGroup.png'
 import cam1 from '../assets/images/cam1.png'
 import cam2 from '../assets/images/cam2.png'
 import cam3 from '../assets/images/Clip_path_group.png'
+import bigCamera from '../assets/images/hero-image.png.png'
+
 
 
 const HeroSection = () => {
@@ -78,6 +80,9 @@ const HeroSection = () => {
                 {/* <p className="feature-subtitle">Comprehensive protection</p> */}
               </div>
             </div>
+          </div>
+          <div class="hero-camera">
+            <img src={bigCamera} alt="Camera" />
           </div>
 
         </div>

@@ -6,7 +6,6 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <HeroSection />
-      {/* Other sections will go here */}
     </div>
   );
 };

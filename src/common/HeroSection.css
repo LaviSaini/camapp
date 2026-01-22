@@ -120,7 +120,7 @@
   font-size: 14px;
 }
 
-/* Floating Camera Image */
+/*
 .hero-section::after {
   content: "";
   position: absolute;
@@ -130,6 +130,18 @@
   height: 535px;
   background: url("../../public/assets/images/hero-image.png.png") center/cover no-repeat;
   z-index: 2;
+} */
+
+.hero-camera {
+  position: absolute;
+  right: 20px;
+  top: 260px;          /* 🔒 VISUAL ANCHOR */
+}
+
+/* Image */
+.hero-camera img {
+  height: 520px;
+  width: auto;
 }
 
 /* Feature Card */
