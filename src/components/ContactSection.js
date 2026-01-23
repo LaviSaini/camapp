@@ -31,10 +31,10 @@ const ContactSection = () => {
                     </p>
 
                     <div className="social-icons">
-                        <a><img src={Symbol1} alt="" /></a>
-                        <a><img src={Symbol2} alt="" /></a>
-                        <a><img src={Symbol3} alt="" /></a>
-                        <a><img src={Symbol4} alt="" /></a>
+                        <a href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr'><img src={Symbol1} alt="" /></a>
+                        <a href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr'><img src={Symbol2} alt="" /></a>
+                        <a href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr'><img src={Symbol3} alt="" /></a>
+                        <a href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr'><img src={Symbol4} alt="" /></a>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@ const ContactSection = () => {
                         </div>
                         <div>
                             <span>Email Address</span>
-                            <strong>info@domainname.com</strong>
+                            <strong>info@aasrainfotech.com</strong>
                         </div>
                     </div>
 

@@ -50,7 +50,7 @@ const AboveFooter = () => {
               </div>
               <div>
                 <p className="contact-label">Email address</p>
-                <p className="contact-value">info@gmail.com</p>
+                <p className="contact-value">info@aasrainfotech.com</p>
               </div>
             </div>
 

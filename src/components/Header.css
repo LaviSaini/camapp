@@ -27,6 +27,19 @@
 }
 
 /* Logo */
+.logo{
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.logo .lgimage img{
+  width: 42px;
+}
+.logo h4{
+  font-size: 18px;
+}
+
 .logo h1 {
   font-size: 1.8rem;
   font-weight: 700;

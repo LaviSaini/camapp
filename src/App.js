@@ -34,6 +34,7 @@ import Home from "./pages/Home";
 import About from "./pages/AboutUs";
 import ServicePage from "./pages/ServicePage";
 import Contact from "./pages/ContactUs";
+import ServiceDetail from "./pages/ServiceDetail";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicePage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/service-detail" element={<ServiceDetail />} />
       </Routes>
       <Footer />   
     </Router>

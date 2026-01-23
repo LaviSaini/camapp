@@ -80,10 +80,10 @@ const Services = () => {
                   We provide professional CCTV installation services offering
                   high-quality cameras.
                 </p>
-
+{/* 
                 <a href="/" className="service-link">
                   Discover More <span>→</span>
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

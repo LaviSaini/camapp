@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import logoIcon from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
+import circle from "../assets/images/circle.png";
+
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,7 +33,10 @@ const Header = () => {
       <div className="header-container">
 
         <div className="logo">
-          <img src={logoIcon} alt="UltraCam Logo" className="logo-img" />
+          {/* <img src={logoIcon} alt="UltraCam Logo" className="logo-img" /> */}
+          <span className="lgimage"><img src={circle} alt="Circle" />
+          </span>
+          <h4>AasraInfoTech.</h4>
         </div>
 
         <nav className="desktop-nav">

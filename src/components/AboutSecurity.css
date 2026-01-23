@@ -7,8 +7,9 @@
   max-width: 1250px;
   margin: auto;
   display: grid;
+  padding: 16px;
   grid-template-columns: 1fr 1.1fr;
-  gap: 80px;
+  gap: 100px;
   align-items: center;
 }
 
@@ -263,7 +264,7 @@
   background: linear-gradient(90deg,
       #E01C08 0%,
       #B11101 50%,
-      #E01C08 100%);;
+      #E01C08 100%);
   border-radius: 50%;
   position: relative;
 }

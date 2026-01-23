@@ -5,6 +5,7 @@ import Symbol1 from "../assets/images/Symbol1.png";
 import Symbol2 from "../assets/images/Symbol2.png";
 import Symbol3 from "../assets/images/Symbol3.png";
 import Symbol4 from "../assets/images/Symbol4.png";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -28,10 +29,10 @@ const Footer = () => {
             </p>
 
             <div className="social-icons">
-              <div className="icon-circle"><img src={Symbol1} alt="Pinterest" /></div>
-              <div className="icon-circle"><img src={Symbol2} alt="Twitter" /></div>
-              <div className="icon-circle"><img src={Symbol3} alt="Facebook" /></div>
-              <div className="icon-circle"><img src={Symbol4} alt="Instagram" /></div>
+              <Link href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr' className="icon-circle"><img src={Symbol1} alt="Pinterest" /></Link>
+              <Link href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr' className="icon-circle"><img src={Symbol2} alt="Twitter" /></Link>
+              <Link href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr' className="icon-circle"><img src={Symbol3} alt="Facebook" /></Link>
+              <Link href='https://www.instagram.com/aasrainfotech?igsh=MXNvM3k4emtsc3hsbg%3D%3D&utm_source=qr' className="icon-circle"><img src={Symbol4} alt="Instagram" /></Link>
             </div>
           </div>
 
