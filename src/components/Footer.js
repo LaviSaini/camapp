@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import FooterLogo from "../assets/images/footer-logo.svg.png";
+import FooterLogo from "../assets/images/footer-logocircle.png";
 import Symbol1 from "../assets/images/Symbol1.png";
 import Symbol2 from "../assets/images/Symbol2.png";
 import Symbol3 from "../assets/images/Symbol3.png";
@@ -19,7 +19,7 @@ const Footer = () => {
           {/* LEFT */}
           <div className="footer-column about-column">
             <div className="footer-logo">
-              <img src={FooterLogo} alt="UltraCam" />
+              <img src={FooterLogo} alt="AasraInfoTech" /><span>AasraInfoTech.</span>
             </div>
 
             <h4 className="footer-subtitle">About Solutions</h4>

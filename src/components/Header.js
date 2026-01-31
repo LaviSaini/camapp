@@ -33,7 +33,6 @@ const Header = () => {
       <div className="header-container">
 
         <div className="logo">
-          {/* <img src={logoIcon} alt="UltraCam Logo" className="logo-img" /> */}
           <span className="lgimage"><img src={circle} alt="Circle" />
           </span>
           <h4>AasraInfoTech.</h4>
@@ -106,7 +105,7 @@ const Header = () => {
         <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <nav className="mobile-nav-content">
             <div className="mobile-logo">
-              <img src={logoIcon} alt="UltraCam Logo" className="logo-img" />
+              <img src={logoIcon} alt="AasraInfoTech Logo" className="logo-img" />
             </div>
             <ul className="mobile-nav-links">
               <li>
