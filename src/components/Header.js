@@ -9,8 +9,9 @@ import circle from "../assets/images/circle.png";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const onScroll = () => {
       setIsSticky(window.scrollY > 60);
     };
