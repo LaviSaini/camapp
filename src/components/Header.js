@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
 import logoIcon from "../assets/images/logo.png";
-import { useNavigate,NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import circle from "../assets/images/circle.png";
 
 
@@ -29,7 +29,7 @@ const Header = () => {
     // You can add your quote functionality here
     // alert('Get Quote functionality would go here!');
     navigate("/contact")
-    
+
   };
 
   return (
