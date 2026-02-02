@@ -2,14 +2,14 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
 import logoIcon from "../assets/images/logo.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,NavLink } from "react-router-dom";
 import circle from "../assets/images/circle.png";
 
-const navigate = useNavigate();
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const navigate = useNavigate();
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -28,7 +28,7 @@ const Header = () => {
   const handleGetQuoteClick = () => {
     // You can add your quote functionality here
     // alert('Get Quote functionality would go here!');
-    useNavigate("/contact")
+    navigate("/contact")
     
   };
 
