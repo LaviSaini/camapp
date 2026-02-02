@@ -29,16 +29,17 @@ const Header = () => {
     // You can add your quote functionality here
     // alert('Get Quote functionality would go here!');
     navigate('/contact')
-    
-    
+
+
   };
 
   return (
     <header className={`header ${isSticky ? "sticky" : ""}`}>
       <div className="header-container">
 
-        <div className="logo">
-          <span className="lgimage"><img src={circle} alt="Circle" />
+        <div className="logo" onClick={() => navigate("/")}>
+          <span className="lgimage">
+            <img src={circle} alt="Circle" />
           </span>
           <h4>AasraInfoTech.</h4>
         </div>
