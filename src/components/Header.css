@@ -185,12 +185,20 @@ cursor:pointer;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.mobile-logo h1 {
-  font-size: 1.8rem;
+.mobile-logo h4 {
+  font-size: 22px;
   color: #333;
   margin: 0;
+}
+
+.mobile-logo img{
+  width: 50px;
+  height: 50px;
 }
 
 .mobile-nav-links {
@@ -220,12 +228,17 @@ cursor:pointer;
 
 .mobile-nav-link.active {
   background-color: #eff6ff;
-  color: #2563eb;
+  color: #e30613;
   font-weight: 600;
 }
 
 .mobile-quote-btn {
-  background-color: #1e40af;
+  background:linear-gradient(
+    90deg,
+    #E01C08 0%,
+    #B11101 50%,
+    #E01C08 100%
+  );
   color: white;
   border: none;
   padding: 0.9rem 1.5rem;
@@ -262,7 +275,7 @@ cursor:pointer;
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header-container {
     padding: 1.2rem 3rem;
     margin-left: 3rem;
@@ -305,4 +318,34 @@ cursor:pointer;
 .header {
   /* position: relative; */
   z-index: 50;
+}
+
+@media (max-width:1024.1px){
+ .quote-btn{
+  display: none;
+ }
+
+ header{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .header-container{
+  width: 90%;
+  height: 50px;
+ }
+}
+
+@media (max-width:500px){
+  .why-center img {
+    max-width: 320px;
+  }
+
+  .header{
+    top: 10px;
+  }
+  .header-container{
+    padding: 16px;
+  }
 }

@@ -16,6 +16,7 @@ const CommitmentSection = () => {
             <div className="commitment-container">
 
                 <div className="commitment-flex">
+                    <div className="commmmmmmmitment">
                     <div className="left-col">
                         <div className="img-card">
                             <img src={imgTop} alt="Office CCTV" />
@@ -36,6 +37,7 @@ const CommitmentSection = () => {
 
                     <div className="right-col">
                         <img src={imgBottom} alt="Camera Installation" />
+                    </div>
                     </div>
                 </div>
 

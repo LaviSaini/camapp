@@ -224,3 +224,18 @@
     min-height: 300px;
   }
 }
+
+@media (max-width:1024.1px){
+  .map-box{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .contact-map-container{
+    gap: 10px;
+  }
+  .form-box{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+}

@@ -255,16 +255,34 @@
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .abovefooter-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .contact-info {
-    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: left;
+    padding: 40px;
+    gap: 26px;
   }
 
   .abovefooter-right img {
     top: 0;
     margin-bottom: 0;
+    max-width: 500px;
+  }
+
+  .abovefooter-left,.hero-descriptions{
+    max-width: unset;
+  }
+  .abovefooter-right{
+    position: unset;
+  }
+  
+  .contact-info{
+    flex-direction: column;
+  }
+
+
+}
+
+@media (max-width:500px){
+  .abovefooter-right img{
+    max-width: 370px;
   }
 }

@@ -33,6 +33,15 @@ const AboutSecurity = () => {
                     </div>
                 </div>
 
+                 <div className="aboutLeftImagesForMobile">
+                    {/* <div className="aboutImg aboutImg--top"> */}
+                        <img
+                            src={container1}
+                            alt="CCTV Installation"
+                        />
+                    {/* </div> */}
+                </div>
+
 
                 <div className="aboutExact__content">
                     <span className="tag"><img src={cameraIcon} alt="About US" />ABOUT US</span>

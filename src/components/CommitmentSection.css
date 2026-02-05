@@ -134,9 +134,13 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1024.1px) {
   .commitment-container {
     grid-template-columns: 1fr;
+  }
+
+  .commitment-flex {
+    justify-content: center;
   }
 
   .image-bottom {
@@ -149,6 +153,19 @@
     position: relative;
     margin-top: 20px;
   }
+
+
+
+
+}
+
+@media (max-width:768px) {
+
+  .img-card,
+  .stats-card,
+  .right-col {
+    width: 170px !important;
+  }
 }
 
 
@@ -157,6 +174,12 @@
   gap: 24px;
   max-height: 464px;
   /* align-items: flex-start; */
+}
+
+.commmmmmmmitment {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 /* LEFT STACK */

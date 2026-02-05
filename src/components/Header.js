@@ -111,7 +111,8 @@ const Header = () => {
         <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <nav className="mobile-nav-content">
             <div className="mobile-logo">
-              <img src={logoIcon} alt="AasraInfoTech Logo" className="logo-img" />
+              <img src={circle} alt="AasraInfoTech Logo" className="logo-img" />
+              <h4>AasraInfoTech.</h4>
             </div>
             <ul className="mobile-nav-links">
               <li>

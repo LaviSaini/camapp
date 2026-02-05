@@ -166,13 +166,12 @@ max-width: 60%;
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-  .expertise-container {
-    flex-direction: column;
-    gap: 40px;
+@media (max-width:1024.1px) {
+   .expertise-container{
+    flex-direction: column-reverse;
   }
 
-  .expertise-right img {
-    width: 100%;
+  .expertise-left {
+    max-width: 100% !important;
   }
 }
