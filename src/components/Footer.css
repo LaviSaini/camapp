@@ -115,6 +115,10 @@
     gap: 18px;
   }
 
+  .footer {
+    padding: 30px 0 30px;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 14px;
