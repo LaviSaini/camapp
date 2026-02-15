@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "title": "Residential Solutions",
+    "image": "/images/Residential/Residential-Solutions.jpg"
+  },
+  "intro": {
+    "heading": "Smart Security for Modern Homes",
+    "description": "<p>Your home should feel safe — not vulnerable. At <strong>Aasra Infotech</strong>, we design intelligent residential security systems that protect your family, property, and peace of mind through smart, connected technology.</p><p>Our residential solutions combine high-definition surveillance, smart access control, and real-time mobile monitoring into one seamless ecosystem.</p><h3>What We Deliver</h3><ul><li>Advanced CCTV Surveillance</li><li>Smart Video Door Phones &amp; Doorbell Cameras</li><li>Smart Locks &amp; Access Control</li><li>Intrusion Detection &amp; Motion Sensors</li><li>Mobile App Integration</li></ul>"
+  },
+  "sections": [
+    {
+      "title": "1. Advanced CCTV Surveillance",
+      "content": "<p>We deploy high-resolution surveillance cameras with superior night vision, wide dynamic range, and optimized coverage planning. Each camera is strategically positioned after a site assessment to eliminate blind spots and ensure complete visibility of entry points, parking areas, perimeters, and critical zones. Our systems provide reliable 24/7 recording with secure storage and remote accessibility.</p>",
+      "image": "/images/Residential/R1.jpg"
+    },
+    {
+      "title": "2. Smart Video Door Phones & Doorbell Cameras",
+      "content": "<p>Our smart door communication systems allow homeowners to visually verify visitors, communicate in real time, and grant or deny access from anywhere. With motion-triggered recording and mobile notifications, you remain aware of all entry activity even when you are not physically present.</p>",
+      "image": "/images/Residential/R2.jpg"
+    },
+    {
+      "title": "3. Smart Locks & Access Control",
+      "content": "<p>We provide modern, keyless access solutions including PIN-based, biometric, RFID, and mobile-controlled locks. These systems enhance convenience while eliminating risks associated with traditional keys. Access logs and controlled permissions ensure greater security and monitoring of household entry activity.</p>",
+      "image": "/images/Residential/R3.jpg"
+    },
+    {
+      "title": "4. Intrusion Detection & Motion Sensors",
+      "content": "<p>Our advanced motion detectors and intrusion alarm systems instantly identify unauthorized movement or perimeter breaches. Real-time alerts allow homeowners to respond immediately, reducing the risk of theft, vandalism, or unauthorized access.</p>",
+      "image": "/images/Residential/R4.webp"
+    },
+    {
+      "title": "5. Mobile App Integration",
+      "content": "<p>We integrate all security components into a unified mobile platform, enabling live viewing, playback, instant alerts, and remote system control. This ensures you stay connected to your property anytime, from anywhere.</p>",
+      "image": "/images/Residential/R5.webp"
+    }
+  ]
+}

@@ -30,6 +30,11 @@
   margin-bottom: 20px;
 }
 
+.footer-logo img {
+  width: 40px;
+  border-radius: 50%;
+}
+
 .footer-logo span {
   font-weight: 600;
   font-size: 20px;

@@ -35,10 +35,14 @@ import About from "./pages/AboutUs";
 import ServicePage from "./pages/ServicePage";
 import Contact from "./pages/ContactUs";
 import ServiceDetail from "./pages/ServiceDetail";
+import SolutionPage from "./pages/SolutionPage";
+import ScrollToTop from "./common/ScrollToTop";
+import SolutionDetailPage from "./pages/SolutionDetailPage";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -46,8 +50,10 @@ function App() {
         <Route path="/services" element={<ServicePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/service-detail" element={<ServiceDetail />} />
+        <Route path="/solutions" element={<SolutionPage />} />
+        <Route path="/solutions/:solutionName" element={<SolutionDetailPage />} />
       </Routes>
-      <Footer />   
+      <Footer />
     </Router>
   );
 }

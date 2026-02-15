@@ -37,3 +37,34 @@
   }
 }
 
+/* ===== Chrome, Edge, Safari ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111; /* ya #f1f1f1 agar light chahiye */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E01C08;
+  border-radius: 10px;
+  border: 2px solid #111; /* track ke saath spacing effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2a14; /* thoda lighter on hover */
+}
+
+/* ===== Firefox ===== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E01C08 #111;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+* {
+  scrollbar-color: #E01C08 #ffffff;
+}

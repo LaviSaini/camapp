@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import FooterLogo from "../assets/images/footer-logocircle.png";
+import FooterLogo from "../assets/images/aasraLogo.jpeg";
 import Symbol1 from "../assets/images/Symbol1.png";
 import Symbol2 from "../assets/images/Symbol2.png";
 import Symbol3 from "../assets/images/Symbol3.png";
