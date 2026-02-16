@@ -60,7 +60,7 @@
 @media (max-width: 768px) {
   .solution-row,
   .solution-row.reverse {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
   }
 
