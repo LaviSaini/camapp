@@ -38,6 +38,7 @@ import ServiceDetail from "./pages/ServiceDetail";
 import SolutionPage from "./pages/SolutionPage";
 import ScrollToTop from "./common/ScrollToTop";
 import SolutionDetailPage from "./pages/SolutionDetailPage";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
@@ -52,6 +53,8 @@ function App() {
         <Route path="/service-detail" element={<ServiceDetail />} />
         <Route path="/solutions" element={<SolutionPage />} />
         <Route path="/solutions/:solutionName" element={<SolutionDetailPage />} />
+        <Route path="/products" element={<ProductPage />} />
+
       </Routes>
       <Footer />
     </Router>

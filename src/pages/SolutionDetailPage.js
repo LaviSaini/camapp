@@ -2,7 +2,7 @@ import AboveFooter from "../components/AboveFooter";
 import PageHero from "../components/PageHero";
 import Solutions from "../components/Solutions";
 import { useParams } from "react-router-dom";
-import cameraIcon from "../assets/images/MaskGroupRed.png";
+// import cameraIcon from "../assets/images/MaskGroupRed.png";
 
 import residential from "../data/solutions/Residential.json";
 import commercial from "../data/solutions/Commercial.json";

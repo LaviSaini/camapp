@@ -122,6 +122,17 @@ const Header = () => {
               )}
             </li>
 
+             <li>
+              <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Products
+              </NavLink>
+            </li>
+
             <li>
               <NavLink
                 to="/contact"
@@ -242,6 +253,18 @@ const Header = () => {
                     
                   </ul>
                 )}
+              </li>
+
+               <li>
+                <NavLink
+                  to="/products"
+                  className={({ isActive }) =>
+                    isActive ? "mobile-nav-link active" : "mobile-nav-link"
+                  }
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Products
+                </NavLink>
               </li>
 
 
