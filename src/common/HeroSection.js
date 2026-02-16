@@ -16,9 +16,9 @@ const HeroSection = () => {
     alert('Get Started clicked!');
   };
 
-  const handleWatchVideo = () => {
-    alert('Watch Video clicked!');
-  };
+  // const handleWatchVideo = () => {
+  //   alert('Watch Video clicked!');
+  // };
 
   return (
     <section className='backgroundddd'>
@@ -49,11 +49,11 @@ const HeroSection = () => {
                 Get Started Now
                 <span className="btn-arrow">→</span>
               </button>
-
+{/* 
               <button className="secondary-btn" onClick={handleWatchVideo}>
                 <span className="play-icon"><img src={playIcon}></img></span>
                 Watch Video
-              </button>
+              </button> */}
             </div>
 
             {/* Features */}
