@@ -242,9 +242,9 @@ const Solutions = () => {
 
                 {/* HEADER */}
                 <div className="services-header">
-                    <h2 className="services-title solution-title">
+                    {/* <h2 className="services-title solution-title">
                         <span>SOLUTIONS</span>
-                    </h2>
+                    </h2> */}
                     <p className="introDescription" >At Aasra Infotech, we deliver end-to-end security ecosystems designed to protect people, property, and operations across residential, commercial, institutional, and industrial environments.
                         Our approach goes beyond installing devices — we engineer integrated, intelligent, and scalable security infrastructures that combine surveillance, access control, networking, and AI-powered analytics into one unified system.
                         From consultation and site assessment to system design, installation, integration, and long-term support, we provide complete lifecycle management of your security infrastructure.
