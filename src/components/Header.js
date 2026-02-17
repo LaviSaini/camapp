@@ -112,12 +112,17 @@ const Header = () => {
 
               {isSolutionsOpen && (
                 <div className="dropdown-menu">
-                  <NavLink to="/solutions/Residential" className="dropdown-item">Residential Solution</NavLink>
-                  <NavLink to="/solutions/Commercial" className="dropdown-item">Commercial Solution</NavLink>
-                  <NavLink to="/solutions/Institution" className="dropdown-item">Institution Solution</NavLink>
-                  <NavLink to="/solutions/Hospitality" className="dropdown-item">Hospitality Solution</NavLink>
-                  <NavLink to="/solutions/Industrial" className="dropdown-item">Industrial Solution</NavLink>
-                  <NavLink to="/solutions/Banking" className="dropdown-item">Banking & Financial Industry Solution</NavLink>
+                  <NavLink to="/solutions/Residential" className="dropdown-item">Residential Solutions</NavLink>
+                  <NavLink to="/solutions/Commercial" className="dropdown-item">Commercial Solutions</NavLink>
+                  <NavLink to="/solutions/Institution" className="dropdown-item">Institution Solutions</NavLink>
+                  <NavLink to="/solutions/Hospitality" className="dropdown-item">Hospitality Solutions</NavLink>
+                  <NavLink to="/solutions/Industrial" className="dropdown-item">Industrial Solutions</NavLink>
+                  <NavLink to="/solutions/Banking" className="dropdown-item">Banking & Financial Industry Solutions</NavLink>
+                  <NavLink to="/solutions/Command" className="dropdown-item">Command & Control Room Solutions</NavLink>
+                  <NavLink to="/solutions/Construction" className="dropdown-item">Construction site Solutions</NavLink>
+                  <NavLink to="/solutions/Healthcare" className="dropdown-item">Healthcare & Hospital Solutions</NavLink>
+                  <NavLink to="/solutions/Gated" className="dropdown-item">Gated Community & Township Solutions</NavLink>
+
                 </div>
               )}
             </li>
@@ -248,6 +253,26 @@ const Header = () => {
                     <li>
                       <NavLink to="/solutions/Banking" className="mobile-nav-sublink" onClick={() => setIsMobileMenuOpen(false)}>
                         Banking & Financial Industry Solutions
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/solutions/Command" className="mobile-nav-sublink" onClick={() => setIsMobileMenuOpen(false)}>
+                        Command & Control Room Solutions
+                      </NavLink>
+                    </li>
+                     <li>
+                      <NavLink to="/solutions/Construction" className="mobile-nav-sublink" onClick={() => setIsMobileMenuOpen(false)}>
+                        Construction site Solutions
+                      </NavLink>
+                    </li>
+                     <li>
+                      <NavLink to="/solutions/Healthcare" className="mobile-nav-sublink" onClick={() => setIsMobileMenuOpen(false)}>
+                        Healthcare & Hospital Solutions
+                      </NavLink>
+                    </li>
+                     <li>
+                      <NavLink to="/solutions/Gated" className="mobile-nav-sublink" onClick={() => setIsMobileMenuOpen(false)}>
+                        Gated Community & Township Solutions
                       </NavLink>
                     </li>
                     

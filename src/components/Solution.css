@@ -73,3 +73,7 @@
     order: -1; /* image always on top */
   }
 }
+
+.solution-title{
+  margin-top: 0px;
+}

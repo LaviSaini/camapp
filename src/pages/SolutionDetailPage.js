@@ -10,6 +10,11 @@ import institution from "../data/solutions/Institution.json";
 import banking from "../data/solutions/Banking.json";
 import industrial from "../data/solutions/Industrial.json";
 import hospitality from "../data/solutions/Hospitality.json";
+import healthcare from "../data/solutions/Healthcare.json";
+import command from "../data/solutions/Command.json";
+import construction from "../data/solutions/Construction.json";
+import gated from "../data/solutions/Gated.json";
+
 import SolutionsDetailLayout from "../components/SolutionsDetailLayout";
 
 const solutionMap = {
@@ -18,7 +23,11 @@ const solutionMap = {
     institution,
     banking,
     industrial,
-    hospitality
+    hospitality,
+    healthcare,
+    construction,
+    gated,
+    command
 };
 const SolutionDetailPage = () => {
     const { solutionName } = useParams();

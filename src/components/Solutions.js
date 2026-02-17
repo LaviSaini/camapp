@@ -242,7 +242,7 @@ const Solutions = () => {
 
                 {/* HEADER */}
                 <div className="services-header">
-                    <h2 className="services-title">
+                    <h2 className="services-title solution-title">
                         <span>SOLUTIONS</span>
                     </h2>
                     <p className="introDescription" >At Aasra Infotech, we deliver end-to-end security ecosystems designed to protect people, property, and operations across residential, commercial, institutional, and industrial environments.
