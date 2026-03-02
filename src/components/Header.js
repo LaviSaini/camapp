@@ -1,7 +1,7 @@
 // Header.jsx
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import logoIcon from "../assets/images/aasraLogo.jpeg";
+import logoIcon from "../assets/images/asralogo.jpeg";
 import { NavLink, useNavigate } from "react-router-dom";
 import circle from "../assets/images/circle.png";
 
@@ -44,7 +44,7 @@ const Header = () => {
           <span className="lgimage">
             <img src={logoIcon} alt="Circle" />
           </span>
-          <h4>AasraInfoTech.</h4>
+          {/* <h4>AasraInfoTech.</h4> */}
         </div>
 
         <nav className="desktop-nav">
@@ -170,7 +170,6 @@ const Header = () => {
           <nav className="mobile-nav-content">
             <div className="mobile-logo">
               <img src={logoIcon} alt="AasraInfoTech Logo" className="logo-img" />
-              <h4>AasraInfoTech.</h4>
             </div>
             <ul className="mobile-nav-links">
               <li>
